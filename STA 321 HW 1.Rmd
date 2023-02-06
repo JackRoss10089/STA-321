@@ -1,0 +1,17 @@
+---
+title: "STA 321 HW 1"
+author: "Jack Ross"
+date: '2023-02-06'
+output: html_document
+---
+
+#Data
+```{r}
+library(knitr)
+
+protein = read.csv("https://raw.githubusercontent.com/pengdsci/sta321/main/ww02/w02-Protein_Supply_Quantity_Data.csv", 
+                   header = TRUE)
+var.name = names(protein)
+kable(data.frame(var.name))
+
+```
